@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Basic Color Changer</title>
+    <style>
+      body { font-family: system-ui, sans-serif; margin: 12px; width: 220px; }
+      .row { display: flex; gap: 8px; align-items: center; }
+      input[type="color"] { width: 36px; height: 36px; border: none; padding: 0; }
+      input[type="text"] { flex: 1; padding: 6px; }
+      button { padding: 6px 10px; cursor: pointer; }
+      small { color: #666; }
+    </style>
+  </head>
+  <body>
+    <h3>Pick a color</h3>
+    <div class="row">
+      <input id="colorPicker" type="color" value="#c0ffee" />
+      <input id="hexInput" type="text" value="#c0ffee" />
+    </div>
+    <div style="margin-top: 10px;">
+      <button id="applyBtn">Apply to page</button>
+    </div>
+    <p><small>Changes current tab background with MV3 scripting.</small></p>
+    <script src="popup.js"></script>
+  </body>
+</html>
+  
